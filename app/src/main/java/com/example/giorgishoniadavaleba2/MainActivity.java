@@ -1,0 +1,28 @@
+package com.example.giorgishoniadavaleba2;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void onClickSignin (View view) {
+        Intent signin = new Intent(this, MainActivity2.class);
+        startActivity(signin);
+
+    }
+
+    public void onClickSignup (View view) {
+        Intent signup = new Intent(this, MainActivity3.class);
+        startActivity(signup);
+
+    }
+}
